@@ -1,0 +1,8 @@
+to run it u need to type these commands in terminal
+
+gcc -c mylib/mylib.c -o mylib.o 
+MinGW32-make 
+./main.exe
+
+to run it again type :
+./main.exe
