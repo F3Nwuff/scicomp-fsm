@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "mylib/mylib.h"
+#include <unistd.h>
 
 int main(void) {
     int onoff, current1, current2, choice1, choice2;
@@ -78,7 +79,8 @@ int main(void) {
     if (current1 == 1 && current2 == 1 && choice1 == 1 && choice2 == 1) {
         printf("Next State is 0 0\n\n\n\n");
     }else {printf("Next state is %d %d\n\n\n\n", nextstate[0], nextstate[1]);}
-    
+    sleep(3);
+
     if (current1 == 0 && current2 == 0 && choice1 == 0 && choice2 == 0 || 
         current1 == 1 && current2 == 0 && (choice1 == 0 || 1) && choice2 == 0 || 
         current1 == 0 && current2 == 1 && choice1 == 0 && (choice2 == 0 || 1) || 
@@ -91,29 +93,64 @@ int main(void) {
     }
     if (current1 == 0 && current2 == 0 && choice1 == 1 && choice2 == 0 ||
         current1 == 0 && current2 == 1 && choice1 == 1 && choice2 == 0 ) {
-        //left on
+        //left on 
+        while (1) {
         printf("blinker becomes : \n");
-        printf("\033[31m  xxxxx\033[0m                         xxxxx\033[0m\n");
-        printf("\033[31m xxxxxxx\033[0m                       xxxxxxx\033[0m\n");
-        printf("\033[31m  xxxxx\033[0m                         xxxxx\033[0m\n");
+        printf("\033[31m xxxxx\033[0m                         xxxxx\033[0m\n");
+        printf("\033[31mxxxxxxx\033[0m                       xxxxxxx\033[0m\n");
+        printf("\033[31m xxxxx\033[0m                         xxxxx\033[0m\n");
+        fflush(stdout);
+        sleep(1);
+        printf("\033c");
+        printf("blinker becomes : \n");
+        printf(" xxxxx\033[0m                          xxxxx\033[0m\n");
+        printf("xxxxxxx\033[0m                        xxxxxxx\033[0m\n");
+        printf(" xxxxx\033[0m                          xxxxx\033[0m\n");
+        fflush(stdout);
+        sleep(1);
+        printf("\033c");
+        }
     }
     if (current1 == 0 && current2 == 0 && choice1 == 0 && choice2 == 1 ||
         current1 == 1 && current2 == 0 && choice1 == 0 && choice2 == 1 ) {
         //right on
+        while (1) {
         printf("blinker becomes : \n");
         printf(" xxxxx\033[0m                         \033[31m xxxxx\033[0m\n");
         printf("xxxxxxx\033[0m                       \033[31m xxxxxxx\033[0m\n");
         printf(" xxxxx\033[0m                         \033[31m xxxxx\033[0m\n");
-    }
+        fflush(stdout);
+        sleep(1);
+        printf("\033c");
+        printf("blinker becomes : \n");
+        printf(" xxxxx\033[0m                          xxxxx\033[0m\n");
+        printf("xxxxxxx\033[0m                        xxxxxxx\033[0m\n");
+        printf(" xxxxx\033[0m                          xxxxx\033[0m\n");
+        fflush(stdout);
+        sleep(1);
+        printf("\033c");
+        }
+    }        
     if (current1 == 0 && current2 == 0 && choice1 == 1 && choice2 == 1 ||
         current1 == 1 && current2 == 0 && choice1 == 1 && choice2 == 1 ||
         current1 == 0 && current2 == 1 && choice1 == 1 && choice2 == 1 ) {
         //both on
+        while (1) {
         printf("blinker becomes : \n");
         printf("\033[31m  xxxxx\033[0m                         \033[31m xxxxx\033[0m\n");
         printf("\033[31m xxxxxxx\033[0m                       \033[31m xxxxxxx\033[0m\n");
         printf("\033[31m  xxxxx\033[0m                         \033[31m xxxxx\033[0m\n");
+        fflush(stdout);
+        sleep(1);
+        printf("\033c");
+        printf("blinker becomes : \n");
+        printf(" xxxxx\033[0m                          xxxxx\033[0m\n");
+        printf("xxxxxxx\033[0m                        xxxxxxx\033[0m\n");
+        printf(" xxxxx\033[0m                          xxxxx\033[0m\n");
+        fflush(stdout);
+        sleep(1);
+        printf("\033c");
+        }
     }  
     return 0;
 }
-
