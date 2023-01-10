@@ -75,7 +75,10 @@ int main(void) {
     printf("\n\n\n");
     //next state
     calcnextstate(current1, current2, choice1, choice2, nextstate);
-    printf("Next state is %d %d\n\n\n\n", nextstate[0], nextstate[1]);
+    if (current1 == 1 && current2 == 1 && choice1 == 1 && choice2 == 1) {
+        printf("Next State is 0 0\n\n\n\n");
+    }else {printf("Next state is %d %d\n\n\n\n", nextstate[0], nextstate[1]);}
+    
     if (current1 == 0 && current2 == 0 && choice1 == 0 && choice2 == 0 || 
         current1 == 1 && current2 == 0 && (choice1 == 0 || 1) && choice2 == 0 || 
         current1 == 0 && current2 == 1 && choice1 == 0 && (choice2 == 0 || 1) || 
