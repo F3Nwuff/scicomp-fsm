@@ -23,24 +23,36 @@ there are also 4 states that are possible:
 
 here are the visualizations of the FSM system:
 # state diagram
+
 ![state_diagram](img/FSMdiagram.jpeg)
+
 # truth table
+
 the truth table of the diagram:
+
 ![truth_table](img/truth-table.png)
+
 the table simplified:
+
 ![truth_table](img/truth-table2.png)
 
 # karnaugh map and combinational boolean equations
 then, i made a karnaugh map and its combinational boolean equations:
 
 ![karnaugh](img/karnaugh1.jpeg)
+
 ![karnaugh](img/karnaugh11.jpeg)
+
 which has the equation:
+
 ![karnaugh-equation](img/karnaugh-equation1.jpeg)
 
 ![karnaugh](img/karnaugh2.jpeg)
+
 ![karnaugh](img/karnaugh22.jpeg)
+
 which has the equation
+
 ![karnaugh-equation](img/karnaugh-equation2.jpeg)
 
 ----------------------------------------------------------------------------------------------------------------------------
@@ -52,3 +64,6 @@ MinGW32-make
 
 to run it again type :
 ./main.exe
+
+to stop the program press the q button on the keyboard
+ this program works on windows by using conio.h
