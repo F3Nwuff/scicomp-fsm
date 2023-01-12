@@ -44,7 +44,6 @@ which has the equation
 ![karnaugh-equation](img/karnaugh-equation2.jpeg)
 
 ----------------------------------------------------------------------------------------------------------------------------
-
 to run it u need to type these commands in terminal
 
 gcc -c mylib/mylib.c -o mylib.o 
