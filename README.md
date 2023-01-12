@@ -66,4 +66,5 @@ to run it again type :
 ./main.exe
 
 to stop the program press the q button on the keyboard
+
  this program works on windows by using conio.h
