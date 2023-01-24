@@ -49,7 +49,7 @@ which has the equation:
 
 ![karnaugh](img/karnaugh2.jpeg)
 
-![karnaugh](img/karnaugh22.jpeg)
+![karnaugh](img/kmap22.jpeg)
 
 which has the equation
 
